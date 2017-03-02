@@ -1,33 +1,139 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 	<head>
+		<meta charset="UTF-8" />
+
 		<title>Обо мне</title>
-		<meta charset="UTF-8">
-		<meta name="description" content="Описание">
-	  <meta name="author" content="Павел Мигунов">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <!-- icon -->
-	  <link rel="shortcut icon" type="image/png" href="images/logo.png">
-	  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-	  <!-- styles -->
-		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
-		<link rel="stylesheet" href="css/layout/adjustment.css">
-		<link rel="stylesheet" href="css/sections/about.css">
+		<meta name="description" content="Эта страница обо мне" />
+		<meta name="keywords" content="страница, моя" />
+		<meta name="author" content="Павел Мигунов" />
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- icons -->
+		<link rel="shortcut icon" type="image/png" href="img/favicon/favicon.ico" />
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
+		<!-- styles -->
+		<link rel="stylesheet" href="css/main.css" />
 		<!--[if lt IE 9]>
-	   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
-	  <![endif]-->
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 	</head>
 	<body>
-		<!-- Начало кода -->  
-    <div class="main">
-     <div class="block">Тут будет город заложен :-)</div>
-    </div>
-      <!-- Конец кода -->
-    <!-- Подключаем скрипты -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/scripts.js"></script>
+		<div class="wrapper">
+			<div class="maincontent">
+				<!-- Header -->
+				<header class="header">
+					<div class="container clearfix">
+						<div class="header__left">
+							<!-- User -->
+							<div class="user">
+                <div class="user__avatar">
+                  <img src="img/content/ava-big.jpg" alt="" class="user__avatar-pic">
+                </div>
+                <div class="user__name">Павел Мигунов</div>
+              </div>
+						</div>
+						<div class="header__right">
+							<!-- Contacts -->
+							<div class="contacts">
+								<a href="" class="contacts__trigger">Мои контакты</a>
+								<ul class="contacts__dropdown">
+									<li class="contacts__dropdown-item">
+										<a href="" class="contacts__dropdown-link"></a>
+									</li>
+									<li class="contacts__dropdown-item">
+										<a href="" class="contacts__dropdown-link"></a>
+									</li>
+									<li class="contacts__dropdown-item">
+										<a href="" class="contacts__dropdown-link"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- Content -->
+				<section class="content">
+					<div class="container clearfix">
+						<!-- sidebar -->
+						<aside class="sidebar">
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__item nav__item_active">
+										<a href="index.html" class="nav__link">
+											<i class="fa fa-user-secret nav__link-icon"></i>
+											<span class="nav__link-text">Обо мне</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a href="career.html" class="nav__link">
+											<i class="fa fa-rocket nav__link-icon"></i>
+											<span class="nav__link-text">Карьерный путь</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a href="portfolio.html" class="nav__link">
+											<i class="fa fa-briefcase nav__link-icon"></i>
+											<span class="nav__link-text">Портфолио</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</aside>
+						<!-- stuff -->
+						<main class="stuff">
+							<div class="about clearfix">
+								<div class="about__left">
+									<div class="about__pic">
+										<img src="img/content/ava-big.jpg" class="about__pic-item" alt="">
+									</div>
+								</div>
+								<div class="about__right">
+									<h5 class="content-title">Обо мне</h5>
+									<div class="about__text text-block">
+										<p>Меня зовут Павел. Проживаю в городе Москва, с появлением интернета, с головой увлёкся этой темой, и теперь уже почти год живу Он-Лайн.</p>
+										<p>С недавних пор (уже года два), это уже не просто увлечение, но и нормальный заработок для меня и моей семьи, на этом конечно не собираюсь останавливаться, а буду стараться добиться ещё больших результатов!</p>
+										<p>Интернет сообщество очень интересно и многогранно , почти каждый день появляется что то новое и хочется всё это изучить, внедрить и проверить на себе , многое получается, и со временем приносит свои плоды.</p>
+									</div>
+									<div class="about__download">
+										<a href="#" class="about__download-link" download>
+											<i class="fa fa-download about__download-link-icon"></i>
+											<span class="about__download-link-text">Cкачать резюме</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</main>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container clearfix">
+				<div class="footer__left">
+					<div class="copyright">&copy; Дизайн сайта был разработан в школе LoftSchool</div>
+				</div>
+				<div class="footer__right">
+					<div class="socials">
+						<ul class="socials__list">
+							<li class="socials__item">
+								<a href="#" class="socials__link socials__link_fb"></a>
+							</li>
+							<li class="socials__item">
+								<a href="#" class="socials__link socials__link_vk"></a>
+							</li>
+							<li class="socials__item">
+								<a href="#" class="socials__link socials__link_tw"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- scripts -->
+		<script src="js/scripts.js"></script>
 	</body>
 </html>
